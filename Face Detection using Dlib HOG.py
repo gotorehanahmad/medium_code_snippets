@@ -1,30 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 import dlib
 import cv2
 import face_recognition
 import sys
 
-
-# In[ ]:
-
-
 # Start video capture for webcam -  Specifying 0 as an argument fires up the webcam feed
 video_capture = cv2.VideoCapture(0)
 
-
-# In[ ]:
-
-
 detector = dlib.get_frontal_face_detector()
-
-
-# In[ ]:
-
 
 while True:
     # Grab a single frame of video
