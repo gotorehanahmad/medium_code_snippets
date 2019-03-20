@@ -1,35 +1,17 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import dlib
 import cv2
 import face_recognition
 import sys
 
 
-# In[ ]:
-
-
 # Start video capture for webcam -  Specifying 0 as an argument fires up the webcam feed
 video_capture = cv2.VideoCapture(0)
 
-
-# In[ ]:
-
-
 # You can get the mmod_human_face_detector.dat file from http://dlib.net/files/mmod_human_face_detector.dat.bz2"
-
-
-# In[ ]:
-
-
 cnn_face_detector = dlib.cnn_face_detection_model_v1('mmod_human_face_detector.dat')
-
-
-# In[ ]:
 
 
 while True:
